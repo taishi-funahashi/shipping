@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>○○運輸 | 愛知の運送会社です</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.js"></script>
+    <script>
+
+      $(function() {
+			const hum = $('#burger, .close')
+			const nav = $('.sp-nav')
+			hum.on('click', function(){
+				nav.toggleClass('toggle');
+			});
+		});
+    </script>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="site-title" href="">○○運送株式会社</h1>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#text1">Concept</a></li>
+            <li class="nav-item"><a href="#text2">Service</a></li>
+            <li class="nav-item"><a href="#text3">Works</a></li>
+            <li class="nav-item"><a href="#text4">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="sp-nav">
+          <ul>
+            <li><a href="#text1">Concept</a></li>
+            <li><a href="#text2">Service</a></li>
+            <li><a href="#text3">Works</a></li>
+            <li><a href="#text4">Contact</a></li>
+            <li class="close"><span>閉じる</span></li>
+          </ul>
+        </nav>
+        <!-- ハンバーガーメニュー -->
+        <div id="burger">
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ファーストビュー -->
+      <div class="fv">
+        <div class="main-copy-pc">
+          <p class="en-copy"><span class="red">C</span>onnect <span class="red">Heart</span> <br>&emsp;&emsp;&emsp;& <br>&emsp;&emsp;<span class="blue">V</span>iew <span class="blue">Future</span></p>
+          <p class="jp-copy"><span class="red">心</span>をつなぎ、<span class="blue">未来</span>を見据える</p>
+        </div>
+        <div class="main-copy-sp">
+          <p class="en-copy-sp"><span class="red">C</span>onnect <span class="red">Heart</span><br>&<br><span class="blue">V</span>iew<span class="blue">Future</span></p>
+          <p class="jp-copy-sp"><span class="red">心</span>をつなぎ、<br><span class="blue">未来</span>を見据える</p>
+        </div>
+      </div>
+
+      <!-- コンセプトセクション -->
+      <section class="section-wrapper" id="text1">
+        <h2 class="section-title">Concept</h2>
+        <div class="section-inner">
+        <p class="section-message-pc">"早い" "丁寧"を一番に考えた<br>Just in timeな仕事</p>
+        <p class="section-message-sp">"早い" "丁寧"<br>を一番に考えた<br>Just in timeな仕事</p>
+        <div class="concept-content">
+          <p class="concept-text">出発から到着まで常にGPSで追跡し
+                                  安心で正確な配達の実現しています。
+                                  また、環境にやさしいエコトラックの比率が70%を超えています。
+                                  業界でも高水準で環境にも優しい運送を心掛けています。</p>
+          <div class="concept-img">
+            <img src="./img/concept.png" alt="#">
+          </div>
+          </div>
+          <div class="section-bottom text-right">Our Concept</div>
+        </div>
+      </section>
+
+      <!-- ワークスセクション -->
+      <section class="section-wrapper bg-work" id="text2">
+        <h2 class="section-title text-right text-white">Works</h2>
+        <ul class="works-list">
+          <li class="works-item">
+            <a href="">
+              <div class="works-list-img"><img src="./img/concept.png" alt=""></div>
+              <p class="works-list-text">お客様に対しての想いをご覧いただけます。</p>
+            </a>
+          </li>
+          <li class="works-item">
+            <a href="">
+              <div class="works-list-img"><img src="./img/concept.png" alt=""></div>
+              <p class="works-list-text">主要な配送先をご覧いただけます</p>
+            </a>
+          </li>
+          <li class="works-item">
+            <a href="">
+              <div class="works-list-img"><img src="./img/concept.png" alt=""></div>
+              <p class="works-list-text">設立から現在に至るまでの○○運送の歴史を辿っていきます</p>
+            </a>
+          </li>
+        </ul>
+        <a href="" class="link-bottun">View more</a>
+        <div class="section-bottom text-white">Our Works</div>
+      </section>
+
+      <!--　サービスセクション  -->
+      <section class="section-wrapper" id="text3">
+        <h2 class="section-title">Service</h2>
+        <ul class="service-list">
+          <li class="service-item service1"><a href="">Plannnig</a></li>
+          <li class="service-item service2"><a href="">Calling</a></li>
+          <li class="service-item service3"><a href="">delivery</a></li>
+        </ul>
+        <div class="section-bottom text-right">Our service</div>
+      </section>
+
+      <!-- コンタクトセクション -->
+      <section class="section-wrapper bg-contact" id="text4">
+        <h2 class="section-title text-right text-white">Contact</h2>
+        <p class="contact-message">下記ボタンよりお問合せできます</p>
+        <a href="./contact.html" class="link-bottun">Contact us</a>
+        <div class="section-bottom text-white">Contact</div>
+      </section>
+      
+    </main>
+
+    <footer>
+      <small>kakakaka all right reserved</small>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  </body>
+</html>

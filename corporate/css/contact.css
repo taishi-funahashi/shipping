@@ -1,0 +1,563 @@
+/* baseの設定 */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    letter-spacing: .05em;
+    color: #171717;
+    font-family: 'Noto Serif', 'Noto Serif JP', serif;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+@media screen and (min-width:1001px){
+
+.section-wrapper {
+    padding: 100px 0 70px;
+}
+
+.section-title {
+    max-width: 1000px;
+    color: #282f35;
+    font-size: 6rem;
+    font-style: italic;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.section-title::after {
+    content: "";
+    display: inline-block;
+    background-color: #282f35;
+    width: 200px;
+    height: 5px;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+.section-inner {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.section-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 9rem;
+    opacity: .05;
+}
+
+.submit-button {
+    display: block;
+    width: 240px;
+    line-height: 60px;
+    margin: 0 auto 70px;
+    background-color: #f7d43f;
+    box-shadow: 0 0 6px #1b1310;
+    text-align: center;
+    border-radius: 30px;
+    color: #171717;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.link-bottun:hover {
+    opacity: .7;
+    transition: .3s;
+}
+
+
+/*  ヘッダー部分 */
+.header  {
+    padding: 19px 30px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto;  
+    /* background-color: red; */
+    color: #fff;
+}
+
+.top {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navi  {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navi:hover {
+    opacity: .7;
+    transition: .3s;
+    border-bottom: solid 2px white;
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 2px 2px 2px black,
+    -2px 2px 2px black,
+    2px -2px 2px black,
+    -2px -2px 2px black;   
+}
+
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 30px;
+    font-style: italic;
+}
+
+.nav-item:last-of-type{
+    margin-right: 0px;
+} 
+
+.sp-nav {
+    display: none;
+}
+
+
+#burger {
+    display: none;
+}
+
+
+
+    /* アイキャッチセクション */
+    .wrapper {
+        min-height: 550px;
+        background-color: #171717;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .wrapper h1 {
+        color: #FFF;
+        font-size: 6rem;
+        font-weight: bold;
+        padding-top: 250px;
+        font-style: italic;
+    }
+    .bottom-message {
+        
+        color: burlywood;
+        opacity: .15;
+        font-size: 7rem;
+        margin-top: 100px;
+        float: left;
+        padding-left: 100px;
+        
+    }
+
+/*  フォーム */
+.form-wrapper {
+    padding: 100px 0 80px;
+
+}
+.form-list {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    padding: 0 50px;
+}
+.form-item {
+    margin-bottom: 25px;
+}
+.form-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,textarea {
+    resize: none;
+    appearance: none;
+    -webkit-appearance:none;
+    outline: none;
+    border: 1px solid #141414;
+    width: 100%;
+    color: #171717;
+    box-sizing: border-box;
+}
+
+.input-text {
+    padding: 0 8px;
+    line-height: 30px;
+}
+
+textarea {
+    height: 170px;
+    padding: 0 8px;
+    line-height: 30px;
+}
+
+.checkbox-list {
+  display: flex;
+}
+.checkbox-item {
+  margin-right: 20px;
+}
+
+.checkbox label,
+.checkbox {
+  cursor: pointer;
+}
+
+.checkbox {
+  border: solid 1px #282f35;
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.checkbox:checked {
+  background-color: #333;
+}
+
+
+/*      フッター     */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+}
+
+}
+
+@media screen and (max-width:768px){
+    /* ---------------------------- */
+    /* base_sp
+    /* ---------------------------- */
+    .section-wrapper{
+      padding: 50px 0 40px;
+    }
+    .section-title{
+      padding: 0 4vw;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+  
+    .submit-button{
+      display: block;
+      width: 240px;
+      line-height: 60px;
+      margin: 30px auto;
+      background-color: #f7d43f;
+      box-shadow: 0 0 6px #1b1310;
+      text-align: center;
+      border-radius: 30px;
+      color: #171717;
+      font-weight: bold;
+      text-decoration: none;
+  }
+    
+    
+    
+    
+    /*  ヘッダー部分 */
+     /* ---------------------------- */
+    /* header_sp
+    /* ---------------------------- */
+    .header{
+        max-width: 100%;
+        width: 100%;
+        padding:0 4vw ;
+        height: auto;
+        background-color:black;
+        z-index: 1;
+        position: fixed;
+        align-items: center;
+      }
+
+    .header a {
+      text-decoration: none;
+      color: #fff;
+    }
+      
+    .site-title {
+        text-decoration: none;
+        color: white;
+        margin: 20px 0;
+        display: inline-block;
+        align-items: center;
+    }
+
+      .header-nav{
+        display: none;
+           }
+      
+    
+           #burger {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height:25px;
+            float: right;
+            margin: 20px 30px 20px 0;
+          }
+          
+          #burger span{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: white;
+            transform: translateY(-50%);
+          }
+          
+          #burger::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+          }
+          
+          #burger::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70%;
+            height: 2px;
+            background-color: #fff;
+          }
+          
+          .sp-nav {
+          
+            position: fixed;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100vh;
+            display: block;
+            width: 100%;
+            background: black;
+            transition: all .2s ease-in-out;
+            opacity: 1;
+            transform: translateY(-100%);
+            font-weight: bold;
+          }
+          
+          .sp-nav ul {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            list-style: none;
+          
+          }
+          
+          .sp-nav li{
+            margin: 0;
+            padding: 0;
+            color: white;
+          }
+          
+          .sp-nav li span{
+            font-size: 15px;
+          
+          }
+          
+          .sp-nav li a, .sp-nav li span {
+            display: block;
+            padding: 20px 0;
+            color: white;
+          }
+          
+          .sp-nav .close {
+            position: relative;
+            padding-left: 20px;
+            color: white;
+          }
+          
+          .sp-nav .close::before {
+            content: '';
+            position: absolute;
+            top:50%;
+            left: 0;
+            display: block;
+            width: 16px;
+            height: 1px;
+            background: white;
+            transform: rotate(45deg);
+          }
+          
+          .sp-nav .close::after {
+            content: '';
+            position: absolute;
+            top:50%;
+            left: 0;
+            display: block;
+            width: 16px;
+            height: 1px;
+            background: white;
+            transform: rotate(-45deg);
+          }
+          
+          .toggle {
+            transform: translateY(0);
+            opacity: 0.8;
+          }
+    /* アイキャッチセクション */
+    .wrapper {
+      min-height: 550px;
+      background-color: #171717;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .wrapper h1 {
+      color: #FFF;
+      font-size: 6rem;
+      font-weight: bold;
+      padding-top: 250px;
+      font-style: italic;
+  }
+  .bottom-message {
+      
+      color: burlywood;
+      opacity: .15;
+      font-size: 7rem;
+      margin-top: 70px;
+      
+      
+      
+  }
+
+/*  フォーム */
+.form-wrapper {
+  padding: 100px 0 80px;
+
+}
+.form-list {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  padding: 0 50px;
+}
+.form-item {
+  margin-bottom: 25px;
+}
+.form-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,textarea {
+  resize: none;
+  appearance: none;
+  -webkit-appearance:none;
+  outline: none;
+  border: 1px solid #141414;
+  width: 100%;
+  color: #171717;
+  box-sizing: border-box;
+}
+
+.input-text {
+  padding: 0 8px;
+  line-height: 30px;
+}
+
+textarea {
+  height: 170px;
+  padding: 0 8px;
+  line-height: 30px;
+}
+
+.checkbox-list {
+display: block;
+}
+.checkbox-item {
+margin-right: 0px;
+}
+
+.checkbox label,
+.checkbox {
+cursor: pointer;
+}
+
+.checkbox {
+border: solid 1px #282f35;
+height: 10px;
+width: 10px;
+margin-right: 10px;
+}
+
+.checkbox:checked {
+background-color: #333;
+}
+
+    
+    
+
+
+
+   
+    
+    /*      フッター     */
+    footer {
+        padding: 20px 0;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background-color: black;
+        color: #fff;
+    }
+    
+
+}
+        
+    
+
